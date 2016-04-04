@@ -185,7 +185,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			messageText.setTextColor(Color.WHITE);
 			if (messageFragment == null) {
 				// 如果MessageFragment为空，则创建一个并添加到界面上
-				messageFragment = new MessageFragment();
+				messageFragment = new PostFragment();
 				transaction.add(R.id.content, messageFragment);
 //				transaction.replace(R.id.content, messageFragment);
 			} else {
@@ -199,7 +199,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			contactsText.setTextColor(Color.WHITE);
 			if (contactsFragment == null) {
 				// 如果ContactsFragment为空，则创建一个并添加到界面上
-				 contactsFragment = new ContactsFragment();
+				 contactsFragment = new FileFragment();
 				transaction.add(R.id.content, contactsFragment);
 //				transaction.replace(R.id.content, contactsFragment);
 			} else {
@@ -213,7 +213,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			newsText.setTextColor(Color.WHITE);
 			if (newsFragment == null) {
 				// 如果NewsFragment为空，则创建一个并添加到界面上
-				newsFragment = new NewsFragment();
+				newsFragment = new QuestionFragment();
 				transaction.add(R.id.content, newsFragment);
 //				transaction.replace(R.id.content, newsFragment);
 			} else {
@@ -228,7 +228,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			settingText.setTextColor(Color.WHITE);
 			if (settingFragment == null) {
 				// 如果SettingFragment为空，则创建一个并添加到界面上
-				settingFragment = new SettingFragment();
+				settingFragment = new NewsFragment();
 				transaction.add(R.id.content, settingFragment);
 //				transaction.replace(R.id.content, settingFragment);
 			} else {
