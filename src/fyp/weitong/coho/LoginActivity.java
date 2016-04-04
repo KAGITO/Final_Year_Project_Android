@@ -20,25 +20,38 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import fyp.json.android.UrlJsonAsyncTask;
 
 public class LoginActivity extends Activity{
-	private final static String LOGIN_API_ENDPOINT_URL = "http://104e4124.ngrok.io//login";
+	private final static String LOGIN_API_ENDPOINT_URL = "http://a49ffad5.ngrok.io//login";
 	private SharedPreferences mPreferences;
 	private String mUserEmail;
 	private String mUserPassword;
 	private TextView responseText;
+	Button registerButton;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.activity_login);
 	    responseText=(TextView)findViewById(R.id.textView2);
-
+	    
 	    mPreferences = getSharedPreferences("CurrentUser", MODE_PRIVATE);
+	    
+	    registerButton = (Button) findViewById(R.id.registerButton);
+	    
+	    registerButton.setOnClickListener(new OnClickListener(){
+	    	public void onClick(View v){
+	    		Intent signUp =new Intent();
+	    		signUp.setClass(LoginActivity.this,RegisterActivity.class);
+	    		startActivity(signUp);
+	    	}
+	    });
 	}
 	
 	public void login(View button) {
@@ -111,6 +124,7 @@ public class LoginActivity extends Activity{
 	        return json;
 	    }
 
+	    
 	    @Override
 	    protected void onPostExecute(JSONObject json) {
 	        try {
@@ -118,9 +132,9 @@ public class LoginActivity extends Activity{
 	           responseText.setText(json.toString());
 
 	                // launch the HomeActivity and close this one
-	                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-	                startActivity(intent);
-	                   // finish();
+	                //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+	                //startActivity(intent);
+	                // finish();
 	            }
 	            Toast.makeText(context, json.getString("info"), Toast.LENGTH_LONG).show();
 	        } catch (Exception e) {

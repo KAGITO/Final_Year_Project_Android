@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="bzj"
+            android:hint="E-mail"
             android:inputType="textEmailAddress" >
 
             <requestFocus />
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="bzj"
+            android:hint="Password"
             android:inputType="textPassword" />
 
         <Button
@@ -36,7 +36,18 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="login"
-            android:text="bzj" />
+            android:text="Log in" />
+        
+        
+        <!-- Link to Registration Screen -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="register"
+            android:text="Sign up" />
+
         
             <TextView
         android:id="@+id/textView2"
@@ -45,6 +56,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:text="TextView" />
+            
+            
     </LinearLayout>
 
 
