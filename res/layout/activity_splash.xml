@@ -3,34 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:fillViewport="true" >
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical" >
-
-        <!-- Header Starts -->
-        <!-- Header Ends -->
-        <!-- Footer Start -->
-        <LinearLayout
-            android:id="@+id/footer"
-            android:layout_width="fill_parent"
-            android:layout_height="80dip"
-            android:layout_alignParentBottom="true" >
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="2dip"
-                android:layout_marginRight="2dip"
-                android:src="@drawable/welcom"
-                tools:ignore="ContentDescription" />
-        </LinearLayout>
-        <!-- Footer Ends -->
-        <!-- Login Form -->
-        <!-- Login Form Ends -->
-
-    </RelativeLayout>
-
+    android:fillViewport="true" 
+    android:background="@drawable/welcome">
 </ScrollView>

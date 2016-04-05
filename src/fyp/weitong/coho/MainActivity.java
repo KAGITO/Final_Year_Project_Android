@@ -181,7 +181,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		switch (index) {
 		case 0:
 			// 当点击了消息tab时，改变控件的图片和文字颜色
-			messageImage.setImageResource(R.drawable.message_selected);
+			messageImage.setImageResource(R.drawable.post_selected);
 			messageText.setTextColor(Color.WHITE);
 			if (messageFragment == null) {
 				// 如果MessageFragment为空，则创建一个并添加到界面上
@@ -195,7 +195,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			break;
 		case 1:
 			// 当点击了联系人tab时，改变控件的图片和文字颜色
-			contactsImage.setImageResource(R.drawable.contacts_selected);
+			contactsImage.setImageResource(R.drawable.file_selected);
 			contactsText.setTextColor(Color.WHITE);
 			if (contactsFragment == null) {
 				// 如果ContactsFragment为空，则创建一个并添加到界面上
@@ -209,7 +209,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 			break;
 		case 2:
 			// 当点击了动态tab时，改变控件的图片和文字颜色
-			newsImage.setImageResource(R.drawable.news_selected);
+			newsImage.setImageResource(R.drawable.question_selected);
 			newsText.setTextColor(Color.WHITE);
 			if (newsFragment == null) {
 				// 如果NewsFragment为空，则创建一个并添加到界面上
@@ -224,7 +224,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 		case 3:
 		default:
 			// 当点击了设置tab时，改变控件的图片和文字颜色
-			settingImage.setImageResource(R.drawable.setting_selected);
+			settingImage.setImageResource(R.drawable.news_selected);
 			settingText.setTextColor(Color.WHITE);
 			if (settingFragment == null) {
 				// 如果SettingFragment为空，则创建一个并添加到界面上
@@ -244,13 +244,13 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 	 * 清除掉所有的选中状态。
 	 */
 	private void clearSelection() {
-		messageImage.setImageResource(R.drawable.message_unselected);
+		messageImage.setImageResource(R.drawable.post_unselected);
 		messageText.setTextColor(Color.parseColor("#82858b"));
-		contactsImage.setImageResource(R.drawable.contacts_unselected);
+		contactsImage.setImageResource(R.drawable.file_unselected);
 		contactsText.setTextColor(Color.parseColor("#82858b"));
-		newsImage.setImageResource(R.drawable.news_unselected);
+		newsImage.setImageResource(R.drawable.question_unselected);
 		newsText.setTextColor(Color.parseColor("#82858b"));
-		settingImage.setImageResource(R.drawable.setting_unselected);
+		settingImage.setImageResource(R.drawable.news_unselected);
 		settingText.setTextColor(Color.parseColor("#82858b"));
 	}
 

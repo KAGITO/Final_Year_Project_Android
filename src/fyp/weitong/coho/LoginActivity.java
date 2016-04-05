@@ -132,8 +132,8 @@ public class LoginActivity extends Activity{
 	           responseText.setText(json.toString());
 
 	                // launch the HomeActivity and close this one
-	                //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-	                //startActivity(intent);
+	                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+	                startActivity(intent);
 	                // finish();
 	            }
 	            Toast.makeText(context, json.getString("info"), Toast.LENGTH_LONG).show();

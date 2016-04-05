@@ -17,16 +17,17 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="CoHo"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name="fyp.weitong.coho.Splash"
-            android:label="CoHo" >
+            android:label="CoHo" 
+            android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         <activity
+        <activity
             android:name="fyp.weitong.coho.LoginActivity"></activity>
          
         <activity

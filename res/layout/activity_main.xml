@@ -32,7 +32,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/message_unselected" />
+                    android:src="@drawable/post_unselected" />
 
                 <TextView
                     android:id="@+id/message_text"
@@ -61,7 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/contacts_unselected" />
+                    android:src="@drawable/file_unselected" />
 
                 <TextView
                     android:id="@+id/contacts_text"
@@ -90,7 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/news_unselected" />
+                    android:src="@drawable/question_unselected" />
 
                 <TextView
                     android:id="@+id/news_text"
@@ -119,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/setting_unselected" />
+                    android:src="@drawable/news_unselected" />
 
                 <TextView
                     android:id="@+id/setting_text"
