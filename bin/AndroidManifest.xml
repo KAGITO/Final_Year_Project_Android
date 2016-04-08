@@ -34,7 +34,10 @@
             android:name="fyp.weitong.coho.RegisterActivity"></activity>
         
         <activity
-            android:name="fyp.weitong.coho.MainActivity"></activity>
+            android:name="fyp.weitong.coho.QuestionlistActivity"></activity>
+        
+        <activity
+            android:name="fyp.weitong.coho.ItemQuestionlistActivity"></activity>
         
     </application>
 

@@ -26,7 +26,7 @@ import android.widget.Toast;
 import fyp.json.android.UrlJsonAsyncTask;
 
 public class RegisterActivity extends Activity {
-	private final static String REGISTER_API_ENDPOINT_URL = "http://3bc1e20d.ngrok.io//signup";
+	private final static String REGISTER_API_ENDPOINT_URL = "http://6c93fb25.ngrok.io//signup";
 	private SharedPreferences mPreferences;
 	private String mUserEmail;
 	private String mUserName;

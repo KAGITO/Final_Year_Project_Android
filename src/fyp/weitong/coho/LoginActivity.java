@@ -28,7 +28,7 @@ import android.widget.Toast;
 import fyp.json.android.UrlJsonAsyncTask;
 
 public class LoginActivity extends Activity{
-	private final static String LOGIN_API_ENDPOINT_URL = "http://3bc1e20d.ngrok.io//login";
+	private final static String LOGIN_API_ENDPOINT_URL = "http://6c93fb25.ngrok.io//login";
 	private SharedPreferences mPreferences;
 	private String mUserEmail;
 	private String mUserPassword;
@@ -132,8 +132,8 @@ public class LoginActivity extends Activity{
 	           responseText.setText(json.toString());
 
 	                // launch the HomeActivity and close this one
-	                //Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-	                //startActivity(intent);
+	                Intent intent = new Intent(getApplicationContext(), QuestionlistActivity.class);
+	                startActivity(intent);
 	                // finish();
 	            }
 	            Toast.makeText(context, json.getString("info"), Toast.LENGTH_LONG).show();
