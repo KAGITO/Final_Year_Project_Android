@@ -35,7 +35,7 @@ public final class R {
         public static final int welcome=0x7f02000a;
     }
     public static final class id {
-        public static final int action_settings=0x7f080015;
+        public static final int action_settings=0x7f080014;
         public static final int contacts_image=0x7f08000a;
         public static final int contacts_layout=0x7f080009;
         public static final int contacts_text=0x7f08000b;
@@ -48,7 +48,6 @@ public final class R {
         public static final int news_layout=0x7f08000c;
         public static final int news_text=0x7f08000e;
         public static final int registerButton=0x7f080003;
-        public static final int registerDisclaimer=0x7f080014;
         public static final int setting_image=0x7f080010;
         public static final int setting_layout=0x7f08000f;
         public static final int setting_text=0x7f080011;

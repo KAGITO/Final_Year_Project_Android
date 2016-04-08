@@ -39,7 +39,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Home"
                     android:textColor="#82858b" />
             </LinearLayout>
         </RelativeLayout>
@@ -68,7 +67,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="File"
                     android:textColor="#82858b" />
             </LinearLayout>
         </RelativeLayout>
@@ -97,7 +95,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Question"
                     android:textColor="#82858b" />
             </LinearLayout>
         </RelativeLayout>
@@ -126,7 +123,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="News"
                     android:textColor="#82858b" />
             </LinearLayout>
         </RelativeLayout>
